@@ -14,6 +14,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        xxs: "0.65rem", // Custom extra-small font size
+      },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
       },
