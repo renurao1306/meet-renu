@@ -36,6 +36,10 @@ export default {
         black: {
           DEFAULT: '#000',
           100: '#000319'
+        },
+        white: {
+          DEFAULT: '#FFF',
+          100: '#FAFAFA'
         }
       },
     },

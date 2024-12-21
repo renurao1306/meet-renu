@@ -24,20 +24,20 @@ const Main = () => {
 
                     <TextGenerateEffect className='text-center' words='From design to development, I turn challenges into seamless solutions' />
 
-                    <p className='text-blue-100 text-lg mt-10'>
+                    <p className='text-white text-lg mt-10'>
                         Hi, I&apos;m Renu
                     </p>
-                    <p className='text-blue-100 text-md'>
+                    <p className='text-white-100 text-md'>
                         A sofware developer based in India
                     </p>
 
 
                     <button className="mt-10 relative inline-flex h-12 w-100 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-1 focus:ring-slate-200">
                         <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
-                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-slate-950 px-4 py-1 text-sm font-medium text-white backdrop-blur-3xl">
+                        <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-slate-950 px-8 gap-4 text-sm font-medium text-white backdrop-blur-3xl">
                             Contact Me!
 
-                            <span className='px-2'><FiSend /></span>
+                            <FiSend />
 
                         </span>
                     </button>
