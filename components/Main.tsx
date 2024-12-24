@@ -5,7 +5,7 @@ import { FiSend } from 'react-icons/fi'
 
 const Main = () => {
     return (
-        <div className='pb-36 pt-20'>
+        <div className='pt-20'>
             <div><Spotlight className='-top-40 -left-10 md:-left-32 md:-top-20 h-screen fill-white ' />
                 <Spotlight className='top-10 left-full h-[80vh] w-[50vh] fill-purple-400 ' />
                 <Spotlight className='top-28 left-80  h-[80vh] w-[50vh] fill-blue-800 ' />
