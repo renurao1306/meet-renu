@@ -1,32 +1,60 @@
 /* /components/BentoGrid.css */
+
 .bento-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Maximum 3 items per row */
-    gap: 16px; /* Space between grid items */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default: 3 items per row */
+  gap: 16px; /* Space between grid items */
+}
+
+.bento-grid-item {
+  background-color: #000; /* Black background */
+  border: 1px solid #fff; /* Thin white border */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left; /* Align text to the left */
+  position: relative; /* Enable relative positioning for hover effect */
+  display: flex;
+  flex-direction: column; /* Stack text and image */
+}
+
+.bento-grid-content {
+  margin-bottom: 8px; /* Space between text and image */
+}
+
+.bento-grid-item h3,
+.bento-grid-item p {
+  color: #fff; /* White text */
+  margin: 0;
+  position: relative; /* Allow positioning adjustments */
+  left: 0;
+  transition: left 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.bento-grid-item:hover h3,
+.bento-grid-item:hover p {
+  left: 8px; /* Shift text slightly to the right on hover */
+}
+
+.bento-grid-image {
+  flex-grow: 1; /* Allow image to fill remaining space */
+  width: 100%; /* Fit width */
+  height: 100%; /* Fit height */
+  object-fit: contain; /* Ensure the image fills the container */
+  border-radius: 4px; /* Optional: Slight rounding for image edges */
+  overflow: hidden;
+}
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+  .bento-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row for tablets */
   }
-  
-  .bento-grid-item {
-    background-color: #000; /* Black background */
-    border: 1px solid #fff; /* Thin white border */
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    text-align: left; /* Align text to the left */
-    position: relative; /* Enable relative positioning for hover effect */
+}
+
+@media (max-width: 768px) {
+  .bento-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 item per row for phones */
   }
-  
-  .bento-grid-item h3,
-  .bento-grid-item p {
-    color: #fff; /* White text */
-    margin: 0;
-    position: relative; /* Allow positioning adjustments */
-    left: 0;
-    transition: left 0.3s ease; /* Smooth transition for hover effect */
-  }
-  
-  .bento-grid-item:hover h3,
-  .bento-grid-item:hover p {
-    left: 8px; /* Shift text slightly to the right on hover */
-  }
-  
+}
