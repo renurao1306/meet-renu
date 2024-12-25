@@ -15,19 +15,19 @@ const Main = () => {
                 <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
             </div>
 
-            <div className='flex justify-center relative my-20 z-10'>
+            <div className='flex justify-center relative my-10 z-10'>
                 <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col justify-center items-center'>
-                    <h2 className='text-blue-100 text-xs tracking-widest text-center max-w-80'>
+                    <h2 className='text-blue-100 text-sm tracking-widest text-center max-w-100'>
                         Welcome to my little corner on the Internet!
                     </h2>
 
 
                     <TextGenerateEffect className='text-center' words='From design to development, I turn challenges into seamless solutions' />
 
-                    <p className='text-white text-lg mt-10'>
+                    <p className='text-white text-3xl mt-20'>
                         Hi, I&apos;m Renu
                     </p>
-                    <p className='text-white-100 text-md'>
+                    <p className='text-white-100 text-md mt-2'>
                         A sofware developer based in India
                     </p>
 

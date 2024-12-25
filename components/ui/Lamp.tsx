@@ -14,9 +14,9 @@ export function LampDemo() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-center text-xl font-medium tracking-tight text-transparent md:text-5xl"
+        className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
-        About Me
+        Learn more <br /> about me
       </motion.h1>
     </LampContainer>
   );
@@ -98,6 +98,9 @@ export const LampContainer = ({
 
       <div className="relative z-50 flex -translate-y-80 flex-col items-center px-5">
         {children}
+        <div className="pt-10 text-white-100 text-center">
+        Hi, I'm Renu Rao, a passionate Software Developer with expertise in Python, JavaScript, and frameworks like React, Node.js, and Express.js. Currently pursuing my **Master of Computer Applications (MCA)** at NMIMS, I specialize in building dynamic web and mobile applications, crafting machine learning models, and working with databases like MySQL and MongoDB. With hands-on experience in developing real-time systems and energy-efficient solutions, I thrive on solving complex challenges and leveraging technology to create impactful solutions. Let's connect to explore innovative ideas and meaningful collaborations!
+      </div>
       </div>
     </div>
   );
