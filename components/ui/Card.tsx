@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 export const Card = ({ children, className }: { children: React.ReactNode; className?: string }) => {
   return (
-    <div className={cn("rounded-lg shadow-md overflow-hidden bg-transparent text-white-100 border border-gray-200", className)}>
+    <div className={cn("rounded-lg shadow-md overflow-hidden bg-black text-white-100 ", className)}>
       {children}
     </div>
   );

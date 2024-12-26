@@ -1,6 +1,7 @@
 import About from "@/components/About";
 import Grid from "@/components/Grid";
 import Main from "@/components/Main";
+import Test from "@/components/Test";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import { FaHome } from "react-icons/fa";
 
@@ -11,6 +12,7 @@ export default function Home() {
         <FloatingNav navItems={[{ name: 'Home', link: '/', icon: <FaHome /> }, { name: 'About', link: '/' }]} />
         <Main />
         <About />
+        {/* <Test /> */}
       </div>
     </main>
   );
