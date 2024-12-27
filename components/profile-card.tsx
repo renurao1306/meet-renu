@@ -13,7 +13,7 @@ export default function ProfileCard() {
         <CardContent className="flex items-center space-x-10 p-6 md:flex-row sm: flex-col">
           {/* Avatar Section */}
           <Avatar className="w-80 h-80 rounded-lg">
-            <AvatarImage src="/flower.jpg" alt="Profile picture" className="object-cover object-center w-full h-full"/>
+            <AvatarImage src="/_DMT7580.jpg" alt="Profile picture" className="object-cover object-center w-full h-full"/>
           </Avatar>
 
           {/* Text Section */}
@@ -21,6 +21,7 @@ export default function ProfileCard() {
             <h2 className="text-3xl font-bold mb-1">Renu Rao</h2>
             <p className="text-muted-foreground mb-4">Software Developer | Machine Learning Enthusiast</p>
             <p className="text-muted-foreground text-sm mb-6">Student at NMIMS Mukesh Patel School of Technology Management & Engineering, Mumbai</p>
+            <p className="text-muted-foreground text-sm mb-6">With experience in machine learning, web development, and database systems, I aim to contribute to cutting-edge technological advancements while continually learning and growing.</p>
             <div className="flex justify-start space-x-4 mb-4 mt-10">
               <a href="https://github.com/renurao1306" className="text-gray-600 hover:text-gray-900 transition-colors">
                 <FaGithub className="w-5 h-5 text-white-100" />

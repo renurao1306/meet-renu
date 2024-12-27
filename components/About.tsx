@@ -5,7 +5,7 @@ import ProfileCard from "./profile-card";
 const About = () => {
   return (
     <>
-    <p className="text-white-100 text-center text-5xl relative mt-20 mb-10">Learn more about me!</p>
+    <p className="text-white-100 text-center text-5xl relative mt-20 mb-10">Meet the Developer in Me!</p>
       <ProfileCard />
     </>
   );
