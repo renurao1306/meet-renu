@@ -12,7 +12,7 @@ export default function Home() {
         <FloatingNav navItems={[{ name: 'Home', link: '/', icon: <FaHome /> }, { name: 'About', link: '/' }]} />
         <Main />
         <About />
-        {/* <Test /> */}
+        <Test />
       </div>
     </main>
   );

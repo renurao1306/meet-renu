@@ -1,11 +1,14 @@
 import React from "react";
-import { LampDemo } from "@/components/ui/Lamp";
 import ProfileCard from "./profile-card";
+import { FlipWords } from "./ui/FlipWords";
+
+const words = ["Developer", "Innovator", "Designer", "Engineer", "Creator", "Explorer"];
+
 
 const About = () => {
   return (
     <>
-    <p className="text-white-100 text-center text-5xl relative mt-20 mb-10">Meet the Developer in Me!</p>
+    <div className="text-white-100 text-center text-3xl relative mt-20 mb-10">Meet the <FlipWords words={words} duration={2000} className="text-2xl font-bold" />in Me!</div>
       <ProfileCard />
     </>
   );
