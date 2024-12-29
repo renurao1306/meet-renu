@@ -6,68 +6,7 @@ import { motion } from "framer-motion";
 import { IconBrandYoutubeFilled } from "@tabler/icons-react";
 import Link from "next/link";
 
-export function FeaturesSectionDemo() {
-  const features = [
-    {
-      title: "Track issues effectively",
-      description:
-        "Track and manage your project issues with ease using our intuitive interface.",
-      skeleton: <div className="flex justify-center"><img src="/flower.jpg" className="w-[80vh] border border-white-100 rounded-md"/></div>,
-      className:
-        "col-span-1 lg:col-span-4 border-b lg:border-r dark:border-neutral-800",
-    },
-    {
-      title: "Capture pictures with AI",
-      description:
-        "Capture stunning photos effortlessly using our advanced AI technology.",
-        skeleton: <div className="flex justify-center"><img src="/flower.jpg" className="w-[80vh] h-[40vh] border border-white-100 rounded-md"/></div>,
-      className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800",
-    },
-    {
-      title: "Watch our AI on YouTube",
-      description:
-        "Whether its you or Tyler Durden, you can get to know about our product on YouTube",
-        skeleton: <div className="flex justify-center"><img src="/flower.jpg" className="w-[80vh] border border-white-100 rounded-md"/></div>,
-      className:
-        "col-span-1 lg:col-span-3 lg:border-r  dark:border-neutral-800",
-    },
-    {
-      title: "Deploy in seconds",
-      description:
-        "With our blazing fast, state of the art, cutting edge, we are so back cloud servies (read AWS) - you can deploy your model in seconds.",
-        skeleton: <div className="flex justify-center"><img src="/flower.jpg" className="w-[80vh] border border-white-100 rounded-md"/></div>,
-      className: "col-span-1 lg:col-span-3 border-b lg:border-none",
-    },
-  ];
-  return (
-    <div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto">
-      <div className="px-8">
-        <h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
-          Packed with thousands of features
-        </h4>
-
-        <p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
-          From Image generation to video generation, Everything AI has APIs for
-          literally everything. It can even create this website copy for you.
-        </p>
-      </div>
-
-      <div className="relative ">
-        <div className="grid grid-cols-1 lg:grid-cols-6 mt-12 xl:border rounded-md dark:border-neutral-800">
-          {features.map((feature) => (
-            <FeatureCard key={feature.title} className={feature.className}>
-              <FeatureTitle>{feature.title}</FeatureTitle>
-              <FeatureDescription>{feature.description}</FeatureDescription>
-              <div className=" h-full w-full">{feature.skeleton}</div>
-            </FeatureCard>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-const FeatureCard = ({
+export const FeatureCard = ({
   children,
   className,
 }: {
@@ -75,27 +14,30 @@ const FeatureCard = ({
   className?: string;
 }) => {
   return (
-    <div className={cn(`p-4 sm:p-8 relative overflow-hidden`, className)}>
+    <div className={cn(
+      `p-4 sm:p-8 relative overflow-visible flex flex-col justify-start items-start`,
+      className
+    )}>
       {children}
     </div>
   );
 };
 
-const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
+export const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
   return (
-    <p className=" max-w-5xl mx-auto text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
+    <p className=" max-w-5xl text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
       {children}
     </p>
   );
 };
 
-const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
+export const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
   return (
     <p
       className={cn(
         "text-sm md:text-base  max-w-4xl text-left mx-auto",
         "text-neutral-500 text-center font-normal dark:text-neutral-300",
-        "text-left max-w-sm mx-0 md:text-sm my-2"
+        "text-left mx-0 md:text-sm my-2"
       )}
     >
       {children}
@@ -103,3 +45,19 @@ const FeatureDescription = ({ children }: { children?: React.ReactNode }) => {
   );
 };
 
+export const FeatureButton = ({
+  onClick,
+  label,
+}: {
+  onClick: () => void;
+  label: string;
+}) => {
+  return (
+    <button className="mt-10 relative inline-flex h-16 w-100 overflow-hidden rounded-md p-[1px] focus:outline-none focus:ring-1 focus:ring-slate-200" onClick={onClick}>
+      <span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)]" />
+      <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-md bg-slate-950 px-8 gap-4 text-sm font-medium text-white backdrop-blur-3xl">
+        {label}
+      </span>
+    </button>
+  );
+};

@@ -1,9 +1,9 @@
 import React from "react";
-import { FeaturesSectionDemo } from "./ui/FeatureSection";
+import Projects  from "./Projects";
 
 const Test = () => {
   return (
-    <FeaturesSectionDemo />
+    <Projects />
   );
 };
 
