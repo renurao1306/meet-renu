@@ -1,9 +1,9 @@
 import React from "react";
-import Projects  from "./Projects";
+import Footer from "./Footer";
 
 const Test = () => {
   return (
-    <Projects />
+    <Footer />
   );
 };
 
