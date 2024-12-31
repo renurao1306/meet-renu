@@ -25,7 +25,7 @@ export const FeatureCard = ({
 
 export const FeatureTitle = ({ children }: { children?: React.ReactNode }) => {
   return (
-    <p className=" max-w-5xl text-left tracking-tight text-black dark:text-white text-xl md:text-2xl md:leading-snug">
+    <p className=" max-w-5xl text-left tracking-tight text-white-100 text-xl md:text-2xl md:leading-snug">
       {children}
     </p>
   );
@@ -36,7 +36,7 @@ export const FeatureDescription = ({ children }: { children?: React.ReactNode })
     <p
       className={cn(
         "text-sm md:text-base  max-w-4xl text-left mx-auto",
-        "text-neutral-500 text-center font-normal dark:text-neutral-300",
+        "text-neutral-400 text-center font-normal",
         "text-left mx-0 md:text-sm my-2"
       )}
     >

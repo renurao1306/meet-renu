@@ -11,8 +11,8 @@ const Main = () => {
                 <Spotlight className='top-28 left-80  h-[80vh] w-[50vh] fill-blue-800 ' />
             </div>
 
-            <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-white/[0.05] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
-                <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+            <div className="h-screen w-full bg-black-100 flex items-center justify-center absolute top-0 left-0">
+                <div className="absolute pointer-events-none inset-0 flex items-center justify-center bg-black-100"></div>
             </div>
 
             <div className='flex justify-center relative my-10 z-10'>
@@ -22,7 +22,7 @@ const Main = () => {
                     </h2>
 
 
-                    <TextGenerateEffect className='text-center' words='From design to development, I turn challenges into seamless solutions' />
+                    <TextGenerateEffect className='text-center text-white-100' words='From design to development, I turn challenges into seamless solutions' />
 
                     <p className='text-white text-3xl mt-20'>
                         Hi, I&apos;m Renu

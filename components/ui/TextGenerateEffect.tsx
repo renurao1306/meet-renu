@@ -39,7 +39,7 @@ export const TextGenerateEffect = ({
           className={`opacity-0 ${
             idx === wordsArray.length - 1
               ? "text-purple-400"
-              : "dark:text-white text-black"
+              : "text-white-100"
           }`}
           style={{
             filter: filter ? "blur(10px)" : "none",
@@ -54,7 +54,7 @@ export const TextGenerateEffect = ({
   return (
     <div className={cn("font-bold", className)}>
       <div className="mt-4">
-        <div className="dark:text-white text-black text-5xl leading-snug tracking-wide">
+        <div className="text-white-100 text-5xl leading-snug tracking-wide">
           {renderWords()}
         </div>
       </div>
